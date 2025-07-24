@@ -49,29 +49,4 @@ document.addEventListener('DOMContentLoaded', function() {
             honeycombBg.style.transform = `translateY(${rate}px)`;
         });
     }
-    
-    // Add typing effect to tagline
-    const tagline = document.querySelector('.tagline');
-    if (tagline) {
-        const text = tagline.textContent;
-        tagline.textContent = '';
-        tagline.style.borderRight = '2px solid #DAA520';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                tagline.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                // Remove cursor after typing is complete
-                setTimeout(() => {
-                    tagline.style.borderRight = 'none';
-                }, 1000);
-            }
-        }
-        
-        // Start typing effect after a short delay
-        setTimeout(typeWriter, 1000);
-    }
 });
