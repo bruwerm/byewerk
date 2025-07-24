@@ -262,6 +262,22 @@ body {
     margin-bottom: 2rem;
 }
 
+.contact-spacing {
+    margin-top: 2rem;
+}
+
+.email-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.email-text {
+    margin-bottom: 0;
+    flex: 1;
+}
+
 .contact-item {
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -305,8 +321,8 @@ body {
 }
 
 .portrait-img {
-    width: 160px;
-    height: 160px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #DAA520;
